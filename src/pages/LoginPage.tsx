@@ -53,7 +53,7 @@ const LoginPage: React.FC = () => {
     
     try {
       // Redirect to Google OAuth2 authorization endpoint on backend
-      window.location.href = 'http://localhost:8080/oauth2/authorization/google';
+      window.location.href = 'https://hotel-booking-be-zdtg.onrender.com/oauth2/authorization/google';
     } catch (err: any) {
       console.error('Google OAuth2 error:', err);
       setError('Failed to initiate Google login. Please try again.');

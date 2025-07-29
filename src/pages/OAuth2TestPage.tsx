@@ -7,7 +7,7 @@ const OAuth2TestPage: React.FC = () => {
   const testBackendConnection = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:8080/oauth2/test');
+      const response = await fetch('https://hotel-booking-be-zdtg.onrender.com/oauth2/test');
       const data = await response.json();
       setResponse(`Backend Test: ${JSON.stringify(data, null, 2)}`);
     } catch (error) {
@@ -136,8 +136,8 @@ const OAuth2TestPage: React.FC = () => {
           <h2 className="font-bold mb-2">Debug Info:</h2>
           <ul className="text-sm">
             <li><strong>Frontend URL:</strong> {window.location.origin}</li>
-            <li><strong>Expected Backend URL:</strong> http://localhost:8080</li>
-            <li><strong>OAuth2 Auth URL:</strong> http://localhost:8080/oauth2/authorization/google</li>
+            <li><strong>Expected Backend URL:</strong> https://hotel-booking-be-zdtg.onrender.com</li>
+            <li><strong>OAuth2 Auth URL:</strong> https://hotel-booking-be-zdtg.onrender.com/oauth2/authorization/google</li>
             <li><strong>Success Callback:</strong> {window.location.origin}/auth/oauth2/success</li>
           </ul>
         </div>

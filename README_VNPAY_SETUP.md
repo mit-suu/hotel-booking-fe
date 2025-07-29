@@ -108,14 +108,14 @@ Route: /payment/return -> PaymentReturnPage
 VNPAY_TMN_CODE=your_tmn_code
 VNPAY_SECRET_KEY=your_secret_key
 VNPAY_API_URL=https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
-VNPAY_RETURN_URL=http://localhost:3000/payment/return
-VNPAY_IPN_URL=http://localhost:8080/api/payment/vnpay/ipn
+VNPAY_RETURN_URL=https://hotel-booking-be-zdtg.onrender.com/payment/return
+VNPAY_IPN_URL=https://hotel-booking-be-zdtg.onrender.com/api/payment/vnpay/ipn
 ```
 
 ### Frontend Configuration
 ```typescript
 // Frontend tự động detect environment từ API_URL
-const API_URL = 'http://localhost:8080'; // Dev
+const API_URL = 'https://hotel-booking-be-zdtg.onrender.com'; // Dev
 // const API_URL = 'https://api.yourdomain.com'; // Production
 ```
 
@@ -179,7 +179,7 @@ cd booking
 npm run dev
 
 # Test URL
-http://localhost:3000/booking?hotelId=xxx&roomTypeId=xxx&checkIn=xxx&checkOut=xxx
+https://hotel-booking-be-zdtg.onrender.com/booking?hotelId=xxx&roomTypeId=xxx&checkIn=xxx&checkOut=xxx
 ```
 
 ## Troubleshooting
