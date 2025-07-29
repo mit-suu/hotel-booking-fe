@@ -20,7 +20,7 @@ const OAuth2TestPage: React.FC = () => {
   const testOAuth2Config = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:8080/oauth2/config/debug');
+      const response = await fetch('https://hotel-booking-be-zdtg.onrender.com/oauth2/config/debug');
       const data = await response.json();
       setResponse(`OAuth2 Config: ${JSON.stringify(data, null, 2)}`);
     } catch (error) {
@@ -32,18 +32,18 @@ const OAuth2TestPage: React.FC = () => {
 
   const testGoogleAuth = () => {
     console.log('Redirecting to Google OAuth2...');
-    window.location.href = 'http://localhost:8080/oauth2/authorization/google';
+    window.location.href = 'https://hotel-booking-be-zdtg.onrender.com/oauth2/authorization/google';
   };
 
   const testDirectGoogleAuth = () => {
     console.log('Testing direct Google OAuth2 URL...');
-    window.open('http://localhost:8080/oauth2/authorization/google', '_blank');
+    window.open('https://hotel-booking-be-zdtg.onrender.com/oauth2/authorization/google', '_blank');
   };
 
   const testScenarios = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:8080/oauth2/scenarios');
+      const response = await fetch('https://hotel-booking-be-zdtg.onrender.com/oauth2/scenarios');
       const data = await response.json();
       setResponse(`OAuth2 Test Scenarios: ${JSON.stringify(data, null, 2)}`);
     } catch (error) {
@@ -56,7 +56,7 @@ const OAuth2TestPage: React.FC = () => {
   const testTopCities = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:8080/admin/analytics/test-cities', {
+      const response = await fetch('https://hotel-booking-be-zdtg.onrender.com/admin/analytics/test-cities', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('access_token')}`
         }
