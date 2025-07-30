@@ -53,13 +53,7 @@ export interface PaymentBankOption {
 }
 
 export const VNPAY_BANK_OPTIONS: PaymentBankOption[] = [
-  { code: '', name: 'Tất cả phương thức thanh toán', description: 'VNPay sẽ hiển thị tất cả phương thức có sẵn' },
-  { code: 'VNPAYQR', name: 'Thanh toán QR Code', description: 'Quét mã QR để thanh toán' },
   { code: 'VNBANK', name: 'Chuyển khoản ngân hàng', description: 'Chuyển khoản qua tài khoản ngân hàng' },
-  { code: 'INTCARD', name: 'Thẻ quốc tế', description: 'Visa, Mastercard, JCB' },
-  { code: 'VISA', name: 'Thẻ Visa', description: 'Thanh toán bằng thẻ Visa' },
-  { code: 'MASTERCARD', name: 'Thẻ Mastercard', description: 'Thanh toán bằng thẻ Mastercard' },
-  { code: 'JCB', name: 'Thẻ JCB', description: 'Thanh toán bằng thẻ JCB' },
 ];
 
 export const VNPAY_RESPONSE_CODES: Record<string, string> = {
