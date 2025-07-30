@@ -376,17 +376,17 @@ const HotelsPage: React.FC = () => {
             <div className="flex flex-wrap gap-2">
               {location && (
                 <span className="inline-flex items-center bg-white text-blue-800 px-3 py-1 rounded-full text-sm font-medium border border-blue-200">
-                  📍 {location}
+                  {location}
                 </span>
               )}
               {checkInDate && checkOutDate && (
                 <span className="inline-flex items-center bg-white text-blue-800 px-3 py-1 rounded-full text-sm font-medium border border-blue-200">
-                  📅 {new Date(checkInDate).toLocaleDateString('vi-VN')} - {new Date(checkOutDate).toLocaleDateString('vi-VN')}
+                   {new Date(checkInDate).toLocaleDateString('vi-VN')} - {new Date(checkOutDate).toLocaleDateString('vi-VN')}
                 </span>
               )}
               {checkInDate && !checkOutDate && (
                 <span className="inline-flex items-center bg-white text-blue-800 px-3 py-1 rounded-full text-sm font-medium border border-blue-200">
-                  📅 Từ {new Date(checkInDate).toLocaleDateString('vi-VN')}
+                   Từ {new Date(checkInDate).toLocaleDateString('vi-VN')}
                 </span>
               )}
               {guestCount !== 2 && (
@@ -667,7 +667,7 @@ const HotelsPage: React.FC = () => {
                     {/* City Badge - Below Star Rating */}
                     {hotel.city && (
                       <div className="absolute top-12 right-4 bg-white bg-opacity-90 px-2 py-1 rounded-full shadow-sm">
-                        <span className="text-xs text-gray-600">📍 {hotel.city}</span>
+                        <span className="text-xs text-gray-600"> {hotel.city}</span>
                       </div>
                     )}
                   </div>

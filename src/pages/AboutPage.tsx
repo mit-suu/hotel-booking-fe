@@ -90,19 +90,19 @@ const AboutPage: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <TeamMember
-              name="John Smith"
-              position="Chief Executive Officer"
-              image="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+              name="Đặng Quang Cường"
+              position="FrontEnd Developer"
+              image="img/cuong.png"
             />
             <TeamMember
-              name="Sarah Johnson"
-              position="Marketing Director"
-              image="https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg"
+              name="Trần Tuấn Hiệp"
+              position="DevOps Developer"
+              image="img/hiep.png"
             />
             <TeamMember
-              name="Michael Brown"
-              position="Head of Technology"
-              image="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
+              name="Nguyễn Bá Trung Nguyên"
+              position="Backend Developer"
+              image="img/nguyen.png"
             />
           </div>
         </div>

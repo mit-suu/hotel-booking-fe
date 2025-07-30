@@ -199,7 +199,7 @@ const FeaturedHotels: React.FC = () => {
                       {hotel.city && (
                         <div className="flex justify-end mt-1">
                           <span className="inline-flex items-center px-2 py-1 rounded-full text-xs bg-gray-100 text-gray-600 border">
-                            📍 {hotel.city}
+                            {hotel.city}
                           </span>
                         </div>
                       )}
